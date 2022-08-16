@@ -1,13 +1,106 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/*
+body {
+	text-align: center;
+	background-color: #1b2034;
+	color: #fff;
+}*/
+
+img {
+  display: block;
+  width: 380px;
+  height: 380px;
+  margin: 2rem auto;
+}
+
+.app {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #eee;
+  width: 100%;
+  max-width: 320px;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+button,
+a {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.formContainer {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  margin-top: 5rem;
+
+  padding: 2rem 5rem 3rem 5rem;
+}
+.buttonn {
+  background-color: #90ee79;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.buttonn:hover {
+  background-color: #40d31b;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+.DownloadButton {
+  background-color: #457bee;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.DownloadButton:hover {
+  background-color: #003bbb;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
 }

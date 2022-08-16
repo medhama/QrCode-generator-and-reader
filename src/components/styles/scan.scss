@@ -1,0 +1,24 @@
+.outputData {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.removeButton {
+  background-color: #1b2d8f;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+.removeButton:hover {
+  background-color: rgb(74, 134, 247);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
