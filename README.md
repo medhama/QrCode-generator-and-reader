@@ -1,4 +1,4 @@
-# Gr code generator
+# Qr code generator and reader
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
