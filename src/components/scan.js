@@ -3,11 +3,14 @@ import NavBar from "./navbar";
 import "./styles/scan.scss";
 import { useState } from "react";
 
+import { QrReader } from "react-qr-reader";
+
 import QrScanner from "qr-scanner";
 
 const Scan = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [data, setData] = useState("");
+  const [startScan, setStartScan] = useState(false);
 
   const scanimg = (e) => {
     console.log(typeof e.target.files[0]);
@@ -23,6 +26,34 @@ const Scan = () => {
       <NavBar />
       <h1>Scan Qr Code</h1>
       <div>
+        <button
+          className="StartScanButton"
+          onClick={() => {
+            setStartScan(!startScan);
+          }}
+        >
+          {" "}
+          {startScan ? "Stop Scan" : "Start Scan with webcam"}
+        </button>
+        <div className="Scannerr">
+          {startScan && (
+            <QrReader
+              className="webcamm"
+              onResult={(result, error) => {
+                if (!!result) {
+                  setData(result?.text);
+                  setStartScan(false);
+                }
+
+                if (!!error) {
+                  console.info(error);
+                }
+              }}
+              style={{ width: "100%" }}
+            />
+          )}
+        </div>
+
         {selectedImage && (
           <div>
             <img

@@ -22,3 +22,33 @@
   margin-right: 1rem;
   transition: 0.5s;
 }
+
+.StartScanButton {
+  background-color: #1b2d8f;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+.StartScanButton:hover {
+  background-color: rgb(74, 134, 247);
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  transition: 0.5s;
+}
+
+.webcamm {
+  width: 40%;
+  height: 40%;
+  align-items: center;
+}
+
+.Scannerr {
+  //center div
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
